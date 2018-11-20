@@ -27,5 +27,19 @@ read user
 git config --global user.name "$user"
 git config --global user.email "$email"
 
-git clone https://github.com/Amarjithtk/SF_uploader.git
+
+printf " \n Do yo want sourceforge uploader for PixysOS ? : "
+read sf
+
+
+if sf=yes
+then
+   git clone https://github.com/Amarjithtk/SF_uploader.git
+   
+fi
+
 git clone https://github.com/Amarjithtk/tree_cloner.git && . tree_cloner/script.sh
+
+
+
+
